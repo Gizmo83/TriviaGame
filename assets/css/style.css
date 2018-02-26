@@ -10,7 +10,12 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    color: white;
+    color: #f7df1e;
+    display: inline;
+    position: absolute;
+    padding-top: 65px;
+    padding-left: 10px;
+    font-size: 55px;
 }
 .status {
     height: 70px;
@@ -26,4 +31,13 @@ h1 {
 }
 .question-area {
     height: 220px;
+}
+#startquiz, #submit {
+    border-radius: 5px;
+    border-style: none;
+    background-color: #f7df1e;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
 }

@@ -33,7 +33,7 @@ function printQuestion(){
     $("#quiz").append("<input type='radio' class='opt' name='options' value='B'> " + optionB + "<br>");
     $("#quiz").append("<input type='radio' class='opt' name='options' value='C'> " + optionC + "<br>");
     $("#quiz").append("<input type='radio' class='opt' name='options' value='D'> " + optionD + "<br><br>");
-    $("#quiz").append("<button onclick='checkAnswer()'>Submit Answer</button>");
+    $("#quiz").append("<button onclick='checkAnswer()' id='submit' >Submit</button>");
 };
 
 function checkAnswer(){
