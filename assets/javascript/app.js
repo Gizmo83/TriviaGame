@@ -59,12 +59,14 @@ $("#startquiz").on("click",function(){
 
 // Timer - starts decrement function every 1 second
 function startTimer() {
+    $("#timer").html("Time Left: " + timer);
     intervalId = setInterval(decrement, 1000);
 };
 
 function decrement() {
-    $("#timer").html("Time Left: " + timer);
     timer--;
+    $("#timer").html("Time Left: " + timer);
+
     if (timer === 0) {
         arrayPos = questions.length + 1;
         $("#timer").html("Times Up!");
